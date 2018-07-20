@@ -4,10 +4,16 @@ title: About
 permalink: /about/
 ---
 
-Sleek is a modern Jekyll theme focused on speed performance & SEO best practices. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/) or simply read the guide on how to [get started](/getting-started)
+Hey! This is Swasti. I'm currently studying at IIIT Bangalore.
+I enjoy coding, painting and dancing. I decided to create this 
+blog because in my field (Computer Science Engineering :P) we
+come across cool stuff everyday and I wanted to share it with you
+guys too.
 
-You can find the source code for the Jekyll new theme at:
-[sleek](https://github.com/janczizikow/sleek)
+You can take a look at my github profile [here](https://github.com/swastishreya).
 
-You can find the source code for Jekyll at
-[jekyll](https://github.com/jekyll/jekyll)
+Painting and sketching is my favourite time pass. If you like it
+do check out my [instagram page](https://www.instagram.com/swasti.draws/).
+
+Thanks a lot! Feel free to [contact](https://www.facebook.com/swastis.mishra.7) me.
+
