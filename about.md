@@ -4,6 +4,18 @@ title: About
 permalink: /about/
 ---
 
+
+
+
+
+
+
+
+
+
+
+
+
 Hey! This is Swasti. I'm currently studying at IIIT Bangalore.
 I enjoy coding, painting and dancing. I decided to create this 
 blog because in my field (Computer Science Engineering :P) we
