@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+featured-img: swastime
 ---
 
 Hey! This is Swasti. I'm currently studying at IIIT Bangalore.
