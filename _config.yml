@@ -23,7 +23,7 @@ navigation: # Navigation links
 tagline: >
   Hey! Here you can find more about me and my projects :)
 
-hero_img: posts/sleek_lg.jpg # Main background image: use the path from /assets/img/ => This will output /assets/img/posts/sleek_lg.jpg
+hero_img: posts/swasti.jpg # Main background image: use the path from /assets/img/ => This will output /assets/img/posts/sleek_lg.jpg
 
 email: mishra.swastishreya13@gmail.com # email for form submission
 
