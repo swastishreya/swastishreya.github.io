@@ -4,7 +4,7 @@ author: Swasti Shreya Mishra # You :P
 description: > # Meta description of Homepage
   My blog.
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://swastishreya.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://swastishreya.github.io/about" # the base hostname & protocol for your site, e.g. http://example.com
 
 # SEO PLUGIN
 social:

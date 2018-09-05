@@ -20,4 +20,10 @@ For better understanding you can head to [Khan Academy](https://www.khanacademy.
 
 ## What is a Many Time Pad Attack ?
 
-First of all, in order for a message to be perfectly secure, it requires that the key never be used more than once.
+First of all, in order for a message to be perfectly secure, it requires that the key never be used more than once. We can retrieve the text of two messages, which have been encrypted with the same key, without even knowing the key. So, a many time pad attack is only possible if you re-use a key to encrypt more than one messages. 
+
+The simplest and the most understandable article I've read about many time pad attack is [this](http://travisdazell.blogspot.com/2012/11/many-time-pad-attack-crib-drag.html).
+
+## About my code
+
+I've used the crib drag method to implement the many time pad attack. I've written the code in python. 
