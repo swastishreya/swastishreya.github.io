@@ -1,363 +1,390 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swasti Shreya Mishra</title>
+<link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Newsreader:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F8F4EC;
+    --ink:#1E1D1B;
+    --grey:#8A7A63;
+    --hair:#E6DCC8;
+    --accent:#3E5641;
+    --accent-soft:#EDF1EC;
+    --max:720px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Newsreader', Georgia, serif;
+    font-size:18px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--ink); text-decoration-color:var(--hair); text-underline-offset:3px; transition:color .15s ease, text-decoration-color .15s ease;}
+  a:hover{color:var(--accent); text-decoration-color:var(--accent);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
 
-    <title>Swasti Shreya Mishra</title>
+  .wrap{max-width:1040px; margin:0 auto; padding:0 32px;}
 
-    <meta name="author" content="Jon Barron">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-    
-  </head>
+  /* ---------- HERO ---------- */
+  .hero{
+    max-width:1040px; margin:0 auto;
+    padding:72px 32px 48px;
+    display:grid;
+    grid-template-columns:1fr 260px;
+    gap:56px;
+    align-items:center;
+    align-self:end;
+  }
+  .hero h1{
+    font-family:'Fraunces', serif;
+    font-optical-sizing:auto;
+    font-weight:500;
+    font-size:clamp(40px, 5vw, 60px);
+    line-height:1.05;
+    margin:0 0 22px;
+    letter-spacing:-0.01em;
+  }
+  .hero p.lede{
+    font-size:20px;
+    color:#3a3835;
+    max-width:56ch;
+    margin:0 0 20px;
+  }
+  .hero p.at-a-glance{
+    font-family:'Fraunces', serif;
+    font-style:italic;
+    font-size:17px;
+    color:var(--grey);
+    max-width:52ch;
+    margin:0 0 28px;
+  }
+  .hero-links{
+    display:flex; flex-wrap:wrap; gap:6px 18px;
+    font-size:15px;
+  }
+  .hero-photo{
+    position:relative;
+    aspect-ratio:4/4.6;
+    border-radius:2px;
+    overflow:hidden;
+    background:#c5c5c5;
+  }
+  .hero-photo img{
+    width:100%; height:100%; object-fit:cover; object-position:50% 15%; display:block;
+  }
 
-  <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;">
-                  Swasti Shreya Mishra
-                </p>
-                <p>
-                    Hi! I'm a PhD student at University of Amsterdam, working under the supervision of <a href="https://staff.fnwi.uva.nl/p.s.m.mettes/" target="_blank">Dr. Pascal Mettes</a> and <a href="https://research.vu.nl/en/persons/erwin-berkhout" target="_blank">Prof. Dr. Erwin Berkhout</a>.
-                    As a part of the DSC Human-Aligned Video AI (<a href="https://dsc.uva.nl/content/news/2024/10/hava-lab-officially-opened-meet-the-phd-candidates-of-this-lab.html">HAVA</a>) Lab, my research focuses on <strong> "AI for Dentistry" </strong>, 
-                    which involves developing deep learning models to assist dentists in diagnosing dental issues. My explorations at the moment revolve around <strong>robust segmentation</strong> and <strong>synthetic data generation</strong> with for extremely scarce data. I am also looking into 
-                    how <strong>hyperbolic geometry</strong> can improve deep learning models.
-                </p>
-                <p>
-                    Previously, at <a href="https://research.adobe.com/" target="_blank">Adobe Research</a>, I primarily worked on <strong>controlled video generation</strong>, customization of text-to-image generation models (Stable Diffusion/ControlNet/Adobe Firefly), and graphics design<strong> layout generation</strong>.
-                </p>
-                <p>    
-                    During my master's thesis we improved DeepFake-based controlled video generation to investigate the role of specific nonverbal cues in job interviews, under the guidance of 
-                    <a href="https://www.iiitb.ac.in/faculty/dinesh-babu-jayagopi"target="_blank">Prof. Dr. Dinesh Babu Jayagopi</a> (Multimodal Perception Lab), in collaboration with the psychology department of the University of Lausanne. This project was my first major step towards human-aligned video generation.
-                </p>
-                <p style="text-align:center">
-                  <a href="mailto:s.s.mishra@uva.nl">Email</a> &nbsp;/&nbsp;
-                  <a href="files/Swasti_CV_22_feb_2026.pdf">CV</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?user=iQnAsBwAAAAJ&hl=en">Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://x.com/SwastiShreya">Twitter</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/swastishreya/">Github</a> &nbsp;/&nbsp;
-                  <a href="https://swastishreya.github.io/blogissm/">Blogissm</a>
-                </p>
-              </td>
-              <td style="padding:2.5%;width:40%;max-width:40%">
-                <a href="images/swasti_ceo_pic.jpg"><img style="width:150%;max-width:150%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/swasti_ceo_pic.jpg" class="hoverZoomLink"></a>
-              </td>
-            </tr>
-          </tbody></table>
-          
-          <table width="100%" align="center" style="margin-left:10px" cellspacing="0" cellpadding="0" border="0">
-            <tr>
-  
-                <td width="13.8%" valign="top" align="center">
-                  <img src="images/uva_logo.png" alt="sym" width="60%"></a>
-                  <p style="line-height:1.3;"><a href="https://www.uva.nl/en">University of Amsterdam</a><br>PhD Student<br>Jun. 24 - Present</p>
-                  </td>
-        
-                <td width="13.8%" valign="top" align="center">
-                <img src="images/adobe_logo.jpeg" alt="sym" width="107%"></a>
-                <p style="line-height:1.3;"><a href="https://research.adobe.com/">Adobe Research</a><br>Research Associate<br>Jul. 22 - Apr. 24</p>
-                </td>
-        
-                <td width="16.6%" valign="top" align="center">
-                <img src="images/iiitb_logo.png" alt="sym" width="55%"></a>
-                <p style="line-height:1.3;"><a href="https://iiitb.ac.in/">IIIT Bangalore</a><br>
-                  B.Tech. Computer Science <br>
-                  M.Tech. AI/ML<br>
-                  Aug. 17 - Jul. 22</p>
-                </td>
-            </tr>
-        </table>
+  /* ---------- SECTION SHELL ---------- */
+  section{max-width:var(--max); margin:0 auto; padding:56px 32px;}
+  section + section{border-top:1px solid var(--hair);}
+  h2{
+    font-family:'Fraunces', serif;
+    font-weight:500;
+    font-size:28px;
+    margin:0 0 28px;
+  }
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <h2>Times when efforts and results have converged</h2>
-            </td>
-          </tr>
-        </tbody></table>
+  /* ---------- PUBLICATIONS ---------- */
+  .pub{padding:22px 0; border-top:1px solid var(--hair);}
+  .pub:first-of-type{border-top:none; padding-top:0;}
+  .pub-title{font-family:'Fraunces', serif; font-weight:500; font-size:19px; margin:0 0 4px;}
+  .pub-meta{font-size:15px; color:var(--grey); margin:0 0 8px;}
+  .pub-desc{font-size:16px; color:#403e3a; margin:0 0 8px;}
+  .pub-links{font-size:14px;}
+  .pub-links a{margin-right:14px;}
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  /* ---------- PUB MEDIA ---------- */
+  .pub.has-media{
+    display:grid;
+    grid-template-columns:140px 1fr;
+    gap:20px;
+    align-items:start;
+  }
+  .pub-media img,
+  .pub-media video{
+    width:100%; height:auto; display:block;
+    border-radius:2px; object-fit:cover;
+  }
 
-            <tr>
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <img src="images/hunet_results.png" alt="PontTuset" width="200" style="border-style: none">
-                </td>
-                <td style="padding:20px;width:70%;vertical-align:middle">
-                    <span class="papertitle">Hyperbolic U-Net for Robust Medical Image Segmentation</span>
-                  <br>
-                  <strong>Swasti S. Mishra</strong>, Max van Spengler, Erwin Berkhout, Pascal Mettes
-                  <br>
-                  <em>MIDL</em>, 2026
-                  <br>
-                  <a href="https://github.com/swastishreya/Hyperbolic-U-Net">github</a>
-                  /
-                  <a href="https://openreview.net/pdf?id=NxKaeTNMxR">paper</a>
-                  <p></p>
-                  <p>We propose Hyperbolic U-Net, with (i) hyperbolic 2D transpose convolution and hyperbolic 
-                     bilinear upsampling layers that make it possible to create decoders; and (ii) Newton's approximation-scaled 
-                     weight initialization, which ensures norm preservation for all layers at the start of training. Empirically, 
-                     we show that our Hyperbolic U-Nets strongly outperform standard Euclidean U-Nets across multiple medical image 
-                     datasets for out-of-the-box Gaussian, Speckle, Poisson, and Rician noise, as well as to brightness and contrast shift.</p>
-                </td>
-            </tr>
+  /* ---------- COMPACT SECTIONS ---------- */
+  .news{padding:36px 32px;}
 
-            <tr onmouseout="cat3d_stop()" onmouseover="cat3d_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='cat3d_image'>
-                      <video width="200" muted autoplay loop> <source src="images/float.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                    </video>
-                  </div>
-                  <!-- <video width="200" muted autoplay loop> <source src="images/float.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                    </video> -->
-                    <img src='images/float_img.png' width="200">
-                  </div>
-                  <script type="text/javascript">
-                    function cat3d_start() {
-                      document.getElementById('cat3d_image').style.opacity = "1";
-                    }
-          
-                    function cat3d_stop() {
-                      document.getElementById('cat3d_image').style.opacity = "0";
-                    }
-                    cat3d_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://swastishreya.github.io/float/">
-                      <span class="papertitle">Flow Warping of Self-Attention for Clothing Animation Generation
-          </span>
-                  </a>
-                  <br>
-                          
-                  <strong>Swasti S. Mishra</strong>
-                  <a href="https://kuldeepkulkarni.github.io/">Kuldeep Kulkarni</a>,
-                  <a href="https://research.adobe.com/person/duygu-ceylan/">Duygu Ceylan</a>, 
-                          <a href="https://research.adobe.com/person/balaji-vasan-srinivasan/">Balaji V. Srinivasan</a>,
-          
-                  <br>
-                  Arxiv
-                  <br>
-                  <a href="https://swastishreya.github.io/float/">project page</a>
-                  /
-                  <a href="https://arxiv.org/abs/2411.15028"> paper </a>
-                  <p></p>
-                  <p>
-                      We propose a diffusion model-based approach, FloAtControlNet to generate cinemagraphs composed of animations 
-                      of human clothing. The key observation is that the underlying animation is embedded in the flow of the normal 
-                      maps. We utilize the flow thus obtained to manipulate the self-attention maps of appropriate layers.
-                  </p>
-                </td>
-              </tr>
+  /* ---------- NEWS ---------- */
+  .news-list{margin:0; padding:0; list-style:none;}
+  .news-item{
+    display:grid;
+    grid-template-columns:104px 1fr;
+    gap:20px;
+    padding:12px 0;
+    font-size:16px;
+  }
+  .news-date{
+    font-family:'Fraunces', serif; font-style:italic;
+    color:var(--grey); font-size:14px; padding-top:2px;
+  }
+  .news-text a{color:var(--accent);}
+  .news-toggle{
+    margin-top:18px;
+    font-size:14px; color:var(--grey);
+    background:none; border:none; padding:0; cursor:pointer;
+    font-family:'Newsreader', serif;
+    text-decoration:underline; text-decoration-color:var(--hair);
+    text-underline-offset:3px;
+  }
+  .news-toggle:hover{color:var(--accent); text-decoration-color:var(--accent);}
+  .news-older{display:none;}
+  .news-older.open{display:block;}
 
-              <tr>
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <img src="images/design.png" alt="PontTuset" width="200" style="border-style: none">
-                </td>
-                <td style="padding:20px;width:70%;vertical-align:middle">
-                    <span class="papertitle">Design-o-Meter: Towards Evaluating and Refining Graphic Designs</span>
-                  <br>
-                  Sahil Goyal, Abhinav Mahajan,
-                  <strong>Swasti S. Mishra</strong>, Prateksha Udhayanan, Tripti Shukla, KJ Joseph,
-                  <a href="https://research.adobe.com/person/balaji-vasan-srinivasan/">Balaji V. Srinivasan</a>
-                  <br>
-                  <em>WACV</em>, 2025
-                  <br>
-                  <a href="https://sahilg06.github.io/Design-o-meter/">project page</a>
-                  /
-                  <a href="https://openaccess.thecvf.com/content/WACV2025/papers/Goyal_Design-o-Meter_Towards_Evaluating_and_Refining_Graphic_Designs_WACV_2025_paper.pdf">paper</a>
-                  <p></p>
-                  <p>Graphic designs are a powerful visual communication tool, and machine learning is increasingly used to generate them. 
-                    To evaluate their quality, we introduce Design-o-meter, a data-driven method that scores and refines designs. 
-                    Our approach outperforms baselines (including recent Multimodal LLM-based approaches) and aims to drive further research in this field.</p>
-                </td>
-              </tr>
+  /* ---------- AFFILIATIONS ROW ---------- */
+  .affil-row{
+    max-width:1040px;
+    margin:0 auto;
+    padding:0 32px 40px;
+    display:flex;
+    flex-wrap:wrap;
+  }
+  .affil-row-item{
+    flex:1 1 200px;
+    padding:0 24px;
+    border-left:1px solid var(--hair);
+    font-size:14px;
+    color:var(--grey);
+    line-height:1.5;
+  }
+  .affil-row-item:first-child{
+    padding-left:0;
+    border-left:none;
+  }
+  .affil-row-item strong{
+    display:block;
+    font-family:'Fraunces', serif;
+    font-weight:500;
+    font-size:15px;
+    color:var(--ink);
+    margin-bottom:2px;
+  }
 
-            <tr onmouseout="ddp_stop()" onmouseover="ddp_start()">
-                <td style="padding:20px;width:30%;vertical-align:top">
-                  <div class="one">
-                    <div class="two" id='deepfake'>
-                      <video autoplay loop muted playsinline width="200" style="border-radius:0px; border: 1px solid #000; margin-top: 15px;">
-                        <source src="images/motran.mp4" type="video/mp4">
-                      </video>
-                      </div>
-                      <video autoplay loop muted playsinline width="200" style="border-radius:0px; border: 1px solid #000; margin-top: 15px;">
-                        <source src="images/motran.mp4" type="video/mp4">
-                      </video>
-                  </div>
-                  <script type="text/javascript">
-                    function ddp_start() {
-                      document.getElementById('deepfake').style.opacity = "1";
-                    }
-            
-                    function ddp_stop() {
-                      document.getElementById('deepfake').style.opacity = "0";
-                    }
-                    ddp_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:70%;vertical-align:middle">
-                  
-                  <span class="papertitle">A deepfake-based study on facial expressiveness and social outcomes</span>
-                  <br>
-                  Laetitia A. Renier, 
-                  Kumar Shubham, 
-                  Rahil Satyanarayan Vijay, 
-                  <strong>Swasti S. Mishra</strong>, 
-                  Emmanuelle P. Kleinlogel, 
-                  Dinesh B. Jayagopi,
-                  Marianne S. Mast 
-                  <br>
-                  <em>Nature, Scientific Reports</em>, 2024 
-                  <br>
-                  <a href="https://www.nature.com/articles/s41598-024-53475-5">paper</a>
-                  <br>
-                  <p>
-                    AI-generated faces or facial expressions using deepfake-based technologies might also contribute 
-                    to nonverbal behavior studies. As a proof of concept, in this research, we test the replicability 
-                    of past results regarding the positive effects of facial expressiveness (e.g., gazing, nodding, and
-                     smiling) on social outcomes. 
-                </p>
-              </td>
-            </tr>
+  /* ---------- ELSEWHERE ---------- */
+  .elsewhere p{
+    font-family:'Fraunces', serif;
+    font-style:italic;
+    font-size:21px;
+    line-height:1.55;
+    color:#33322f;
+    max-width:56ch;
+  }
 
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src="images/sketch.png" alt="PontTuset" width="200" style="border-style: none">
-              </td>
-              <td style="padding:20px;width:70%;vertical-align:middle">
-                  <span class="papertitle">SketchBuddy: Context-Aware Sketch Enrichment and Enhancement</span>
-                <br>
-                Aishwarya Agarwal, Anuj Srivastava, Inderjeet Nair,
-                <strong>Swasti S. Mishra</strong>, Vineeth Dorna, Sharmila R. Nangi,
-                <a href="https://research.adobe.com/person/balaji-vasan-srinivasan/">Balaji V. Srinivasan</a>
-                <br>
-                <em>ACM MMSys</em>, 2023
-                <br>
-                <a href="https://dl.acm.org/doi/abs/10.1145/3587819.3590980">paper</a>
-                <p></p>
-                <p>To accelerate sketch-based ideation and illustration workflows, we propose a novel framework, 
-                    SketchBuddy, which retrieves diverse fine-grained object suggestions to enrich a sketch and 
-                    coherently inserts it into the scene. Sketchbuddy detects objects in the input sketch to estimate 
-                    the scene context which is then utilized for the recommendation and insertion.</p>
-              </td>
-            </tr>
+  /* ---------- BRAGGING RIGHTS GALLERY ---------- */
+  .gallery-section{max-width:1040px;}
+  .gallery-intro{max-width:56ch; color:var(--grey); font-size:16px; margin:0 0 32px;}
+  .filmstrip{
+    display:grid;
+    grid-template-columns:repeat(5, 1fr);
+    gap:14px;
+  }
+  .frame{
+    position:relative;
+    aspect-ratio:3/4;
+    border-radius:2px;
+    overflow:hidden;
+    cursor:default;
+  }
+  .frame .swatch{
+    position:absolute; inset:0;
+    width:100%; height:100%;
+    object-fit:cover;
+  }
+  .frame .cap{
+    position:absolute; left:10px; bottom:10px;
+    font-family:'Fraunces', serif; font-style:italic; font-size:13px;
+    color:#fff;
+    opacity:.9;
+  }
 
-            <tr>
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <img src="images/motran.png" alt="PontTuset" width="200" style="border-style: none">
-                </td>
-                <td style="padding:20px;width:70%;vertical-align:middle">
-                    <span class="papertitle">A Hybrid Rigid and Non-Rigid Motion Approximation for Generating Realistic Listening Behavior Videos</span>
-                  <br>
-                  <strong>Swasti S. Mishra</strong>, Kumar Shubham, Dinesh B. Jayagopi
-                  <br>
-                  <em>ICVGIP</em>, 2022
-                  <br>
-                  <a href="https://doi.org/10.1145/3571600.3571633">paper</a>
-                  <p></p>
-                  <p>We propose a hybrid model which can approximate a given motion using both first-order and zero-order motion. Therefore, our model takes
-                     into account rigid bodies and non-rigid body-based motions, resulting in lesser artifacts around the lip and eye regions.</p>
-                </td>
-              </tr>
+  /* ---------- FOOTER ---------- */
+  footer{
+    max-width:1040px; margin:0 auto; padding:40px 32px 80px;
+    font-size:14px; color:var(--grey);
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px;
+  }
 
-              <tr>
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                    <h2>Firm dynamics <br> and employee performance <br> management in <br> duopoly markets</h2>
-                </td>
-                <td style="padding:20px;width:70%;vertical-align:middle">
-                    <span class="papertitle">Firm dynamics and employee performance management in duopoly markets</span>
-                  <br>
-                  Prateksha Udhayanan, <strong>Swasti S. Mishra</strong>, Shrisha Rao
-                  <br>
-                  <em>Physica A: Statistical Mechanics and its Applications</em>, 2021
-                  <br>
-                  <a href="https://doi.org/10.1016/j.physa.2021.126298">paper</a>
-                  <p></p>
-                  <p>The effects of the Peter Principle (PP) on a hierarchical firm have been extensively studied, but existing firm models fail to capture 
-                    real-world firm dynamics such as employee motivation and CEO characteristics. We thus extend an existing firm model to introduce the notion
-                     of employee motivation and a CEO agent with parameters for leadership and managerial qualities, and incorporate the vitality curve.</p>
-                </td>
-              </tr>
+  @media (max-width:760px){
+    .hero{grid-template-columns:1fr; padding-top:64px;}
+    .hero-photo{order:-1; max-width:220px;}
+    .filmstrip{grid-template-columns:repeat(2, 1fr);}
+    .pub.has-media{grid-template-columns:1fr;}
+    .pub.has-media .pub-media{width:100%;}
+    .news-item{grid-template-columns:1fr;}
+    .affil-row{flex-direction:column; padding-bottom:32px;}
+    .affil-row-item{border-left:none; border-top:1px solid var(--hair); padding:14px 0 0; margin-top:14px;}
+    .affil-row-item:first-child{border-top:none; padding-top:0; margin-top:0;}
+  }
+</style>
+</head>
+<body>
 
-          </tbody></table>
+  <div class="hero">
+    <div>
+      <h1>Swasti Shreya Mishra</h1>
+      <p class="lede">I build deep learning models that help dentists see what's easy to miss. Currently a PhD researcher at the University of Amsterdam, previously at Adobe Research working on controlled video and image generation.</p>
+      <p class="at-a-glance">PhD candidate, HAVA Lab · publications across MIDL, WACV and Nature Scientific Reports.</p>
+      <div class="hero-links">
+        <a href="mailto:s.s.mishra@uva.nl">Email</a>
+        <a href="files/Swasti_CV_22_feb_2026.pdf">CV</a>
+        <a href="https://scholar.google.com/citations?user=iQnAsBwAAAAJ&hl=en">Scholar</a>
+        <a href="https://github.com/swastishreya/">Github</a>
+        <a href="https://swastishreya.github.io/blogissm/">Blogissm</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="images/swasti_ceo_pic.jpg" alt="Swasti Shreya Mishra">
+    </div>
+  </div>
 
-<!--           
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-            <tr>
-              <td>
-                <h2>Miscellanea</h2>
-              </td>
-            </tr>
-          </tbody></table>
-          <table width="100%" align="center" border="0" cellpadding="20"><tbody>
-            
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/cvf.jpg"></td>
-              <td width="75%" valign="center">
-                <a href="https://cvpr.thecvf.com/Conferences/2024/Organizers">Area Chair, CVPR 2024</a>
-                <br>
-                <a href="https://cvpr2023.thecvf.com/Conferences/2023/Organizers">Demo Chair, CVPR 2023</a>
-                <br>
-                <a href="https://cvpr2022.thecvf.com/area-chairs">Area Chair, CVPR 2022</a>
-                <br>
-                <a href="http://cvpr2021.thecvf.com/area-chairs">Area Chair & Award Committee Member, CVPR 2021</a>
-                <br>
-                <a href="http://cvpr2019.thecvf.com/area_chairs">Area Chair, CVPR 2019</a>
-                <br>
-                <a href="http://cvpr2018.thecvf.com/organizers/area_chairs">Area Chair, CVPR 2018</a>
-              </td>
-            </tr>
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src="images/cs188.jpg" alt="cs188">
-              </td>
-              <td width="75%" valign="center">
-                <a href="http://inst.eecs.berkeley.edu/~cs188/sp11/announcements.html">Graduate Student Instructor, CS188 Spring 2011</a>
-                <br>
-                <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">Graduate Student Instructor, CS188 Fall 2010</a>
-                <br>
-                <a href="http://aima.cs.berkeley.edu/">Figures, "Artificial Intelligence: A Modern Approach", 3rd Edition</a>
-              </td>
-            </tr>
-            
+  <div class="affil-row">
+    <span class="affil-row-item">
+      <strong>University of Amsterdam</strong>
+      PhD Student, HAVA Lab · Jun 2024 – Present
+    </span>
+    <span class="affil-row-item">
+      <strong>Adobe Research</strong>
+      Research Associate · Jul 2022 – Apr 2024
+    </span>
+    <span class="affil-row-item">
+      <strong>IIIT Bangalore</strong>
+      B.Tech + M.Tech · Aug 2017 – Jul 2022
+    </span>
+  </div>
 
-            <tr>
-              <td align="center" style="padding:20px;width:25%;vertical-align:middle">
-                <h2>Basically <br> Blog Posts</h2>
-              </td>
-              <td width="75%" valign="middle">
-                <a href="https://arxiv.org/abs/2112.11687">Squareplus: A Softplus-Like Algebraic Rectifier</a>
-                <br>
-                <a href="https://arxiv.org/abs/2010.09714">A Convenient Generalization of Schlick's Bias and Gain Functions</a>
-                <br>
-                <a href="https://arxiv.org/abs/1704.07483">Continuously Differentiable Exponential Linear Units</a>
-                <br>
-                <a href="https://jonbarron.info/data/cvpr2023_llm_workshop_annotated.pdf">Scholars & Big Models: How Can Academics Adapt?</a>
-              </td>
-            </tr>
-            
-            
-          </tbody></table> -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:0px">
-                <br>
-                <p style="text-align:right;font-size:small;">
-                Source code from <a href="https://github.com/jonbarron/jonbarron_website"> Jon Barron</a>
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-        </td>
-      </tr>
-    </table>
-  </body>
+  <section class="news">
+    <h2>Updates</h2>
+    <ul class="news-list">
+      <li class="news-item">
+        <span class="news-date">Aug 2026</span>
+        <span class="news-text">No Free Robustness was accepted to <a href="https://sites.google.com/view/beyondeuclidean/home">BEW (ECCV) 2026</a>.</span>
+      </li>
+      <li class="news-item">
+        <span class="news-date">Jul 2026</span>
+        <span class="news-text">Won best poster pitch at <a href="https://2026.midl.io/">MIDL 2026</a>.</span>
+      </li>
+      <li class="news-item">
+        <span class="news-date">Feb 2026</span>
+        <span class="news-text">Hyperbolic U-Net was accepted to <a href="https://2026.midl.io/">MIDL 2026</a>.</span>
+      </li>
+    </ul>
+    <ul class="news-list news-older" id="olderNews">
+      <li class="news-item">
+        <span class="news-date">Jan 2025</span>
+        <span class="news-text">Design-o-Meter was accepted to <a href="https://wacv2025.thecvf.com/">WACV 2025</a>.</span>
+      </li>
+      <li class="news-item">
+        <span class="news-date">Apr 2024</span>
+        <span class="news-text">Wrapped up two years at Adobe Research working on controlled video generation.</span>
+      </li>
+      <li class="news-item">
+        <span class="news-date">Jan 2024</span>
+        <span class="news-text">Our deepfake-based nonverbal behavior study was published in <a href="https://www.nature.com/articles/s41598-024-53475-5">Nature Scientific Reports</a>.</span>
+      </li>
+    </ul>
+    <button class="news-toggle" onclick="document.getElementById('olderNews').classList.toggle('open'); this.textContent = this.textContent.startsWith('Show') ? 'Hide earlier updates' : 'Show earlier updates';">Show earlier updates</button>
+  </section>
+
+  <section>
+    <h2>Research</h2>
+
+    <div class="pub has-media">
+      <div class="pub-media"><img src="images/hunet_results.png" alt="Hyperbolic U-Net results"></div>
+      <div>
+        <p class="pub-title">Hyperbolic U-Net for Robust Medical Image Segmentation</p>
+        <p class="pub-meta">Swasti S. Mishra, Max van Spengler, Erwin Berkhout, Pascal Mettes — MIDL, 2026</p>
+        <p class="pub-desc">We propose Hyperbolic U-Net, with hyperbolic 2D transpose convolution and hyperbolic bilinear upsampling layers that make it possible to create decoders, and Newton's approximation-scaled weight initialization, which ensures norm preservation for all layers at the start of training. Empirically, our Hyperbolic U-Nets strongly outperform standard Euclidean U-Nets across multiple medical image datasets for out-of-the-box noise and contrast shift.</p>
+        <p class="pub-links"><a href="https://github.com/swastishreya/Hyperbolic-U-Net">Github</a><a href="https://openreview.net/pdf?id=NxKaeTNMxR">Paper</a></p>
+      </div>
+    </div>
+
+    <div class="pub has-media">
+      <div class="pub-media"><video autoplay loop muted playsinline><source src="images/float.mp4" type="video/mp4"></video></div>
+      <div>
+        <p class="pub-title">Flow Warping of Self-Attention for Clothing Animation Generation</p>
+        <p class="pub-meta">Swasti S. Mishra, Kuldeep Kulkarni, Duygu Ceylan, Balaji V. Srinivasan — arXiv</p>
+        <p class="pub-desc">We propose FloAtControlNet, a diffusion model-based approach to generate cinemagraphs composed of animations of human clothing. The key observation is that the underlying animation is embedded in the flow of the normal maps. We utilize the flow thus obtained to manipulate the self-attention maps of appropriate layers.</p>
+        <p class="pub-links"><a href="https://swastishreya.github.io/float/">Project page</a><a href="https://arxiv.org/abs/2411.15028">Paper</a></p>
+      </div>
+    </div>
+
+    <div class="pub has-media">
+      <div class="pub-media"><img src="images/design.png" alt="Design-o-Meter"></div>
+      <div>
+        <p class="pub-title">Design-o-Meter: Towards Evaluating and Refining Graphic Designs</p>
+        <p class="pub-meta">Sahil Goyal, Abhinav Mahajan, Swasti S. Mishra, Prateksha Udhayanan, Tripti Shukla, KJ Joseph, Balaji V. Srinivasan — WACV, 2025</p>
+        <p class="pub-desc">To evaluate the quality of machine-generated graphic designs, we introduce Design-o-meter, a data-driven method that scores and refines designs. Our approach outperforms baselines including recent Multimodal LLM-based approaches.</p>
+        <p class="pub-links"><a href="https://sahilg06.github.io/Design-o-meter/">Project page</a><a href="https://openaccess.thecvf.com/content/WACV2025/papers/Goyal_Design-o-Meter_Towards_Evaluating_and_Refining_Graphic_Designs_WACV_2025_paper.pdf">Paper</a></p>
+      </div>
+    </div>
+
+    <div class="pub has-media">
+      <div class="pub-media"><video autoplay loop muted playsinline><source src="images/motran.mp4" type="video/mp4"></video></div>
+      <div>
+        <p class="pub-title">A Deepfake-Based Study on Facial Expressiveness and Social Outcomes</p>
+        <p class="pub-meta">Laetitia A. Renier, Kumar Shubham, Rahil Satyanarayan Vijay, Swasti S. Mishra, Emmanuelle P. Kleinlogel, Dinesh B. Jayagopi, Marianne S. Mast — Nature, Scientific Reports, 2024</p>
+        <p class="pub-desc">As a proof of concept, we test the replicability of past results regarding the positive effects of facial expressiveness (gazing, nodding, smiling) on social outcomes using AI-generated faces via deepfake-based technologies.</p>
+        <p class="pub-links"><a href="https://www.nature.com/articles/s41598-024-53475-5">Paper</a></p>
+      </div>
+    </div>
+
+    <div class="pub has-media">
+      <div class="pub-media"><img src="images/sketch.png" alt="SketchBuddy"></div>
+      <div>
+        <p class="pub-title">SketchBuddy: Context-Aware Sketch Enrichment and Enhancement</p>
+        <p class="pub-meta">Aishwarya Agarwal, Anuj Srivastava, Inderjeet Nair, Swasti S. Mishra, Vineeth Dorna, Sharmila R. Nangi, Balaji V. Srinivasan — ACM MMSys, 2023</p>
+        <p class="pub-desc">We propose SketchBuddy, a framework that retrieves diverse fine-grained object suggestions to enrich a sketch and coherently inserts them into the scene by detecting objects to estimate scene context.</p>
+        <p class="pub-links"><a href="https://dl.acm.org/doi/abs/10.1145/3587819.3590980">Paper</a></p>
+      </div>
+    </div>
+
+    <div class="pub has-media">
+      <div class="pub-media"><img src="images/motran.png" alt="Motion transfer"></div>
+      <div>
+        <p class="pub-title">A Hybrid Rigid and Non-Rigid Motion Approximation for Generating Realistic Listening Behavior Videos</p>
+        <p class="pub-meta">Swasti S. Mishra, Kumar Shubham, Dinesh B. Jayagopi — ICVGIP, 2022</p>
+        <p class="pub-desc">We propose a hybrid model that approximates a given motion using both first-order and zero-order motion, accounting for rigid and non-rigid body-based motions to reduce artifacts around the lip and eye regions.</p>
+        <p class="pub-links"><a href="https://doi.org/10.1145/3571600.3571633">Paper</a></p>
+      </div>
+    </div>
+
+    <div class="pub">
+      <p class="pub-title">Firm Dynamics and Employee Performance Management in Duopoly Markets</p>
+      <p class="pub-meta">Prateksha Udhayanan, Swasti S. Mishra, Shrisha Rao — Physica A: Statistical Mechanics and its Applications, 2021</p>
+      <p class="pub-desc">We extend an existing firm model to introduce employee motivation and a CEO agent with parameters for leadership and managerial qualities, incorporating the vitality curve to better capture real-world firm dynamics such as the Peter Principle.</p>
+      <p class="pub-links"><a href="https://doi.org/10.1016/j.physa.2021.126298">Paper</a></p>
+    </div>
+
+  </section>
+
+  <section class="gallery-section">
+    <h2>Elsewhere</h2>
+    <p class="gallery-intro">When I'm not training models, I love being outside.</p>
+    <div class="filmstrip">
+      <div class="frame"><img class="swatch" src="images/gallery/hiking.png" alt="Hiking" loading="lazy"><span class="cap">between trails</span></div>
+      <div class="frame"><img class="swatch" src="images/gallery/biking.png" alt="On a bike ride" loading="lazy"><span class="cap">a 100km ride</span></div>
+      <div class="frame"><img class="swatch" src="images/gallery/dancing.png" alt="Dancing" loading="lazy"><span class="cap">mid-turn</span></div>
+      <div class="frame"><img class="swatch" src="images/gallery/painting.JPG" alt="Painting" loading="lazy"><span class="cap">flow state</span></div>
+      <div class="frame"><img class="swatch" src="images/gallery/exploring.png" alt="Exploring" loading="lazy"><span class="cap">main character</span></div>
+    </div>
+  </section>
+
+  <footer>
+    <span>Swasti Shreya Mishra, 2026</span>
+  </footer>
+
+</body>
 </html>
